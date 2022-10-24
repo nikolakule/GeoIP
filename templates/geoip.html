@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoIP</title>
+    <link rel="stylesheet" href="static/css/css2.css">
+    <link rel="shortcut icon" href="static/images/geo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="hero-bg">
+        <section class="top">
+
+            <h1>Geo IP</h1>
+
+            <p>find out IP location</p>
+
+            {% if geoip_data['status'] == 'fail' %}
+            <p style="color: red;">Invalid IP address</p>
+            {% else %}
+            <div class="form-containter">
+                <form action="" method="post">
+                    <div class="center">
+                        <h3>IP ISP City and Country</h3>
+                        <output>🌍 {{ geoip_data['query'] }}</output>
+                        <output>📇 {{ geoip_data['isp'] }}</output>
+                        <output>🌃 {{ geoip_data['city'] }}</output>
+                        <output>📍 {{ geoip_data['country'] }}</output>
+                        <input type="text"  id="inputip" name="inputip" placeholder="Look up for any Public IP" id="IP">
+                        <input type="submit"  value="Enter">
+                        <iframe src="https://maps.google.com/maps?q={{ geoip_data['lat'] }},{{ geoip_data['lon'] }}&hl=es&z=14&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </form>
+            </div>
+            {% endif %}
+        </section>
+    </div>
+</body>
+</html>

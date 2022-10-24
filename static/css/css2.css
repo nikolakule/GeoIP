@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: url('../images/geo-ip-locator.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+
+} 
+
+.hero-bg {
+    text-align: center;
+    padding-bottom: 4em;
+}}
+
+button {
+    position:absolute;
+    font-family: 'Montserrat', sans-serif;
+    border: #0056a6 1px;
+    cursor: pointer;
+    color:rgb(0, 61, 113);
+    background-color: white ;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    top: 0%;
+    right:88%;
+
+}
+
+.hero-bg a {
+    color: rgb(0, 61, 113);
+    text-decoration: none;
+    font-weight: bold;
+    font-size:  1.2rem;
+}
+
+section {
+    margin: 0 1em;
+}
+
+h3 {
+    color: #00277a;
+    font-size:  1.25rem;
+    margin: 0 0 0 0;
+}
+
+h1 {
+    color: #00277a;
+    font-size:  2.5rem;
+    margin: 20px 0 0 0;
+}
+
+.hero-bg p {
+    padding-bottom: 1px;
+    font-weight: bold;
+    margin: 0 ;
+    color: #00277a;
+}
+
+.form-containter {
+    background-color: rgb(255, 255, 255);
+    margin: 0em -1em 0;
+    padding: 1.5em 2em 2em 2em;
+}
+
+
+output {
+    /* color: #2d4d89;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.5em; */
+
+    border:  2px solid #0056a6;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 1em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    text-align: center;
+    font-size: large;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    float: left;
+   
+}
+
+input[type=text] {
+    border:  2px solid #0056a6;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 1em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    text-align: center;
+    font-size: large;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+input[type=submit] {
+    border: #0056a6 1px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 1.2em;
+    background-color: #f89104;
+    border:  1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+iframe {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: gray;
+    padding: 1px;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+}
+@media (min-width: 390px) {
+
+    section {
+        margin: 0 8em;
+    }
+    .form-containter {
+        margin:  2em -4em 0;
+    }
+
+}
+
+@media (min-width: 530px) {
+
+    .hero-bg p {
+        margin: 0 0 0.5em;
+    }
+    .hero-bg section {
+        width: fit-center;
+    }
+
+    .form-containter {
+        display: inline-block;
+        width: 530px;
+        /* margin: 2em 0 0; */
+        /* padding: 2em; */
+        border-radius: 2em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.3) ;
+    }
+}
